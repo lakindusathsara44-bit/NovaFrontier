@@ -50,7 +50,7 @@ int main() {
     }
     {
         EnemyAimControllerConfig config;
-        config.reaction_time_seconds = 0.0F;
+        config.reaction_time_seconds = 0.1F;
         config.aim_turn_rate_degrees_per_second = 720.0F;
         config.fire_tolerance_degrees = 2.0F;
         EnemyAimController controller(config);
@@ -59,6 +59,8 @@ int main() {
         input.target_id = "target-a";
         input.target_position = {1000.0F, 0.0F, 0.0F};
         auto decision = controller.update(input, 0.016F);
+        assert(!decision.can_fire && !decision.reaction_complete);
+        decision = controller.update(input, 0.1F);
         assert(decision.can_fire && decision.reaction_complete);
         assert(decision.accuracy_factor > 0.0F && decision.accuracy_factor <= 1.0F);
 
