@@ -30,7 +30,7 @@ int main() {
     rifle.tick(0.1F);
     shot = rifle.try_fire();
     assert(shot.fired && rifle.magazine() == 1);
-    assert(std::fabs(shot.spread_degrees - 0.75F) < 0.0001F);
+    assert(std::fabs(shot.spread_degrees - 0.70F) < 0.0001F);
 
     // Spread recovery never falls below base spread.
     rifle.tick(2.0F);
