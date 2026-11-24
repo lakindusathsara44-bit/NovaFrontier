@@ -134,7 +134,7 @@ EnemyAimDecision EnemyAimController::update(const EnemyAimInput& input, float de
         locked_target_id_ = input.target_id;
         reaction_elapsed_seconds_ = 0.0F;
     } else {
-        reaction_elapsed_seconds_ += delta_seconds;
+        reaction_elapsed_seconds_ = std::min(config_.reaction_time_seconds,\n                                            reaction_elapsed_seconds_ + delta_seconds);
     }
 
     const Vector3 initial_offset = subtract(input.target_position, input.muzzle_position);
