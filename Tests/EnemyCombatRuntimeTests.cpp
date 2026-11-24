@@ -38,6 +38,16 @@ int main() {
     assert(frame.perception.ai_input.noise_heard);
     assert(frame.perception.has_last_heard_position);
 
+    EnemyCombatRuntime investigate_runtime;
+    EnemyObservation sound_only;
+    sound_only.noise_heard = true;
+    sound_only.noise_position = {350.0F, 75.0F, 0.0F};
+    sound_only.noise_distance_cm = 400.0F;
+    frame = investigate_runtime.update(sound_only, 0.016F);
+    assert(frame.decision.state == EnemyAIState::Investigate);
+    assert(frame.has_navigation_target);
+    assert(frame.navigation_target.x == 350.0F && frame.navigation_target.y == 75.0F);
+
     EnemyPerceptionMemory memory({1200.0F, 0.5F, 0.5F});
     EnemyObservation seen;
     seen.player_visible = true;
