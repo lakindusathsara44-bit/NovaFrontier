@@ -136,3 +136,16 @@ Android acceptance is a separate gate: touch controls, safe-area layout, frame p
 - Final voice acting and expensive bespoke assets.
 
 These exclusions protect the vertical-slice schedule and can be reconsidered after a successful playtest.
+
+
+## Approved tone and protagonist implementation
+
+The owner approved **Balanced Sci-Fi Action + Mystery** and a **Voiced protagonist**.
+
+Mission 01 should therefore include:
+- A short, confident opening radio exchange after the emergency landing.
+- A brief spoken reaction when the player discovers the relay was locked from inside the colony network.
+- A concise combat reaction when the security drone identifies the player as hostile.
+- A final spoken response to the fragmented signal that raises a question rather than explaining the mystery.
+
+Dialogue must be subtitle-supported, skippable where appropriate, and never required to understand an objective that is not also shown in the HUD. Final dialogue lines and character identity remain placeholders pending character approval.
