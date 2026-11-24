@@ -25,7 +25,6 @@ public:
     int magazine() const noexcept { return weapon_.magazine(); }
     int reserve() const noexcept { return weapon_.reserve(); }
     EnemyAIState state() const noexcept { return ai_.state(); }
-    void reset() noexcept;
 private:
     EnemyCombatAI ai_;
     EnemyPerceptionMemory perception_;
