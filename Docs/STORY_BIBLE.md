@@ -95,3 +95,22 @@ The player should finish Mission 01 knowing:
 - The repeating signal is important, but its source remains unknown.
 
 The player should **not** yet know the complete cause of the incident.
+
+
+## Approved direction update — 2026-11-24
+
+**Owner-approved tone:** Balanced Sci-Fi Action + Mystery.  
+**Owner-approved protagonist format:** Voiced protagonist.
+
+### Narrative balance
+The campaign should alternate purposeful action sequences with quieter investigation and discovery. Mystery must deepen the player's curiosity without making the plot incomprehensible. The story should provide enough answers to reward progress while preserving a larger unanswered question for later missions.
+
+### Protagonist voice principles
+- The protagonist speaks in concise, natural lines rather than constant commentary.
+- Dialogue reveals competence, uncertainty, humour where appropriate, and personal stakes gradually.
+- During combat, lines must never obscure critical sound cues or overload the player.
+- The protagonist reacts to major discoveries and mission consequences.
+- Avoid making the protagonist omniscient: they should interpret evidence, ask questions, and sometimes revise an assumption.
+
+### Still unapproved
+The protagonist's name, age, nationality, service history, personal relationships, actor/voice, and exact backstory are not set by this approval. Do not invent these as canon.
