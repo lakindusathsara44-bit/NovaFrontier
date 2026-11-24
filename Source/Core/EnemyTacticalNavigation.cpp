@@ -84,7 +84,7 @@ EnemyTacticalDecision EnemyTacticalNavigation::update(const EnemyTacticalInput& 
     EnemyTacticalDecision decision;
     decision.should_face_threat = input.has_threat_position;
 
-    if (input.state == EnemyAIState::Disabled) {
+    if (input.state == EnemyAIState::Disabled || input.health == 0) {
         selected_cover_id_.clear();
         decision.waypoint_index = waypoint_index_;
         return decision;
