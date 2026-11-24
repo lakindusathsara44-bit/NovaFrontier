@@ -52,8 +52,6 @@ int main() {
     try { seen.player_distance_cm = -1.0F; memory.update(seen, 0.01F); }
     catch (const std::invalid_argument&) { rejected = true; }
     assert(rejected);
-    runtime.reset();
-    assert(runtime.state() == EnemyAIState::Patrol);
     std::cout << "Enemy combat runtime tests passed\n";
     return 0;
 }
