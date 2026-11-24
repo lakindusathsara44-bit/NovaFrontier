@@ -93,6 +93,24 @@ int main() {
         EnemyTacticalNavigation navigation;
         EnemyTacticalInput input;
         input.state = EnemyAIState::Chase;
+        input.health = 20;
+        input.max_health = 100;
+        input.has_threat_position = true;
+        input.cover_points = {{"low_health_cover", {250.0F, 0.0F, 0.0F},
+                               true, true, false, 0.8F}};
+        auto decision = navigation.update(input, 0.016F);
+        assert(decision.movement_mode == TacticalMovementMode::MoveToCover);
+        assert(decision.cover_id == "low_health_cover");
+
+        input.health = 0;
+        decision = navigation.update(input, 0.016F);
+        assert(decision.movement_mode == TacticalMovementMode::Hold);
+        assert(!decision.has_cover && !decision.should_move);
+    }
+    {
+        EnemyTacticalNavigation navigation;
+        EnemyTacticalInput input;
+        input.state = EnemyAIState::Chase;
         input.has_navigation_target = true;
         input.navigation_target = {400.0F, 0.0F, 0.0F};
         input.has_threat_position = true;
