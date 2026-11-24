@@ -25,8 +25,8 @@ int main() {
         assert(rifle.fire().fired);
         assert(rifle.begin_reload());
         assert(!rifle.fire().fired);
-        assert(rifle.complete_reload() == 1);
-        assert(rifle.magazine() == 3 && rifle.reserve() == 4);
+        assert(rifle.complete_reload() == 2);
+        assert(rifle.magazine() == 3 && rifle.reserve() == 3);
         assert(!rifle.begin_reload());
         assert(rifle.fire().fired);
         assert(rifle.begin_reload());
