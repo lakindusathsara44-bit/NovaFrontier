@@ -11,6 +11,7 @@ int main() {
         EnemyTacticalNavigation navigation;
         EnemyTacticalInput input;
         input.state = EnemyAIState::Patrol;
+        input.position = {-200.0F, 0.0F, 0.0F};
         input.patrol_waypoints = {{0.0F, 0.0F, 0.0F}, {500.0F, 0.0F, 0.0F},
                                   {500.0F, 500.0F, 0.0F}};
         auto decision = navigation.update(input, 0.016F);
