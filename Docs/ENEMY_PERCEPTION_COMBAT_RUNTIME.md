@@ -26,4 +26,4 @@ Connects the portable EnemyCombatAI state machine to the existing WeaponCombat m
 - In multiplayer, run this logic on the authoritative server or validate all inputs and shots server-side. Never trust a client-reported hit.
 
 ## Not implemented
-Unreal AI Perception components, navigation/pathfinding, cover selection, hearing propagation, aim solving, animation montages, audio/VFX, actual projectile or hitscan traces, damage application, server replication, or packaged builds.
+Unreal AI Perception components, navigation/pathfinding, cover selection, hearing propagation, aim solving, animation montages, audio/VFX, actual projectile or hitscan traces, damage application, server replication, or packaged builds. Tactical navigation and engine-evaluated cover selection are described separately in `ENEMY_TACTICAL_NAVIGATION.md`.
