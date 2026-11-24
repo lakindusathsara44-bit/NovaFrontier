@@ -30,3 +30,7 @@ This module does not perform pathfinding, collision, cover traces, reservation/n
 
 ## Validation
 The C++ tests cover loop and ping-pong patrol routes, target movement and arrival, cover filtering/scoring, cover hysteresis, fallback when no cover is available, disabled state and invalid input rejection.
+
+
+## Aim integration
+The separate `ENEMY_AIM_CONTROLLER.md` module provides reaction timing, aim convergence, optional projectile lead and a firing-readiness gate. The engine adapter should combine its `can_fire` result with the combat state's attack permission before requesting a weapon shot.

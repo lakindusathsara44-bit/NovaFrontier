@@ -8,6 +8,7 @@ add_library(nova_frontier_core
     Source/Core/EnemyPerceptionMemory.cpp
     Source/Core/EnemyCombatRuntime.cpp
     Source/Core/EnemyTacticalNavigation.cpp
+    Source/Core/EnemyAimController.cpp
 )
 target_include_directories(nova_frontier_core PUBLIC Source/Core)
 target_compile_features(nova_frontier_core PUBLIC cxx_std_17)
@@ -23,6 +24,8 @@ add_executable(nova_frontier_enemy_runtime_tests Tests/EnemyCombatRuntimeTests.c
 target_link_libraries(nova_frontier_enemy_runtime_tests PRIVATE nova_frontier_core)
 add_executable(nova_frontier_enemy_tactical_tests Tests/EnemyTacticalNavigationTests.cpp)
 target_link_libraries(nova_frontier_enemy_tactical_tests PRIVATE nova_frontier_core)
+add_executable(nova_frontier_enemy_aim_tests Tests/EnemyAimControllerTests.cpp)
+target_link_libraries(nova_frontier_enemy_aim_tests PRIVATE nova_frontier_core)
 enable_testing()
 add_test(NAME nova_frontier_core_tests COMMAND nova_frontier_core_tests)
 add_test(NAME nova_frontier_player_tests COMMAND nova_frontier_player_tests)
@@ -30,3 +33,4 @@ add_test(NAME nova_frontier_weapon_tests COMMAND nova_frontier_weapon_tests)
 add_test(NAME nova_frontier_enemy_ai_tests COMMAND nova_frontier_enemy_ai_tests)
 add_test(NAME nova_frontier_enemy_runtime_tests COMMAND nova_frontier_enemy_runtime_tests)
 add_test(NAME nova_frontier_enemy_tactical_tests COMMAND nova_frontier_enemy_tactical_tests)
+add_test(NAME nova_frontier_enemy_aim_tests COMMAND nova_frontier_enemy_aim_tests)
