@@ -278,3 +278,18 @@ These are intentionally not silently assumed:
 ---
 
 **Next production gate:** approve the working story direction and Mission 01 outline, then run a minimal Unreal Engine project feasibility test before committing to an engine version or building a large asset pipeline.
+
+
+## Approved creative direction — 2026-11-24
+
+The project owner approved:
+- **Tone:** Balanced Sci-Fi Action + Mystery.
+- **Protagonist:** Voiced protagonist.
+
+### Practical interpretation
+- Action remains the primary moment-to-moment gameplay experience.
+- Mystery is revealed through evidence, environmental details, radio exchanges, and mission discoveries.
+- Horror may appear as occasional tension, but the game is not designed as a full survival-horror title.
+- The protagonist has authored dialogue, a distinct voice, opinions, and character development.
+- Dialogue during combat is brief and prioritises actionable information.
+- The protagonist's name, background, voice casting, and final personality details remain open until separately approved.
